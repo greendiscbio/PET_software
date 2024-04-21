@@ -1,0 +1,50 @@
+PyWin-current-version 0.4.1
+
+Version history
+---------------
+
+Version 0.2.0
+Important restructuring of the module and inheritance between classes.
+
+Version 0.2.1
+Added a performance evaluator (Evaluator.py). Minor changes as the possibility of incorporating an algorithm id.
+
+Version 0.2.2
+Redundant code removed, parts of module slightly modified and code documentation.
+
+Version 0.2.3
+Annihilation now incorporates elite individuals and a random population, introduced a wrapper class to run several algorithms in parallel, and modified the plotter class to evaluate the evolution of several algorithms executed in parallel.
+
+Version 0.2.4
+Added globalization algorithm.
+
+Version 0.3.0
+The module has been renamed from PyGeneticTools to PyWin. A great restructuring has been carried out, the modularity has been expanded to facilitate future development of the module. The new module is not compatible with previous versions. Various bugs have been fixed. Also the efficiency has been improved and it has been added hypervolume calculation as a fitness function.
+
+Version 0.3.1
+Rename module 'algorithms' to 'algorithm'. Added NSGAII to algorithm module. Added MultiObjectiveEvaluator to visualization module. Changes in the implementation of GenAlgBase and BasicGA. 
+This version is not stable. The NSGAII algorithm has not yet been integrated with the GlobalizationGA wrapper, a cross validation confusion matrix has not been implemented in the MultiObjectiveEvaluator and there is a bug in the graphical representation of algorithms that only have one solution on the Pareto front.
+
+Version 0.3.2
+Integrated cross validation confusion matrix in MultiObjectiveEvaluator, solved bug in graphical representation of algorithms that only have one solution on the Pareto front. Fixed bug in hypervolume calculation.
+The NSGAII can now be used with the GlobalizationGA algorithm. Now the algorithms accepts scikit-learn OneVsOne and OneVsRest classifiers. The pending issues of the previous version have been resolved and implemented.
+Version not compatible with previous versions.
+
+Version 0.4.0
+Great restructuring of modules. Added a utils submodule to group the functions common to multi-objective algorithms, a data structure, Individual, to group the features and fitness, and a new abstract class in the module algorithm.interface for multi-objective algorithms.
+Selection operator added using Roulette Wheel.
+Repeated stratified K-fold was added for the calculation of the confusion matrix.
+Implemented a new multi-objective algorithm, SPEA2.
+Added numerical information about standard deviation in metrics and confusion matrix.
+Added a parameter to indicate the percentage of annihilated individuals that are filled from elite in BasicGA (previously indicated by passing a tuple to the annihilation_rate parameter)
+Added the possibility of defining a function to optimize the number of features in multi-objective algorithms using a lambda expresion.
+Separate methods for computing confusion matrices on training or test data in Evaluator and MultiObjectiveEvaluator (training_confusion_matrix() and test_confusion_matrix()).
+Improved some of the representations and added a method to compute the ROC curves.
+Version not compatible with previous versions.
+
+Version 0.4.1
+Fixed a bug when serializing multi-objective algorithms.
+Fixed bug in MultiObjectiveEvaluator that did not show all the features selected in the title.
+Fixed bug in roc representation.
+Fixed a bug in the crossover operator that could cause the algorithm to crash.
+Fixed SPEA2 algorithm, may contain bugs but appears to be working fine and stable.
