@@ -1,7 +1,7 @@
 <h1>PET software</h1>
 
 <div>
-    This GitHub is the code repository for the article: _Data-driven prediction of regional brain metabolism using comprehensive neuropsychological assessment in Alzheimer's disease and behavioral variant Frontotemporal dementia_
+    This GitHub is the code repository for the article: "Data-driven prediction of regional brain metabolism using comprehensive neuropsychological assessment in Alzheimer's disease and behavioral variant Frontotemporal dementia"
 </div>
 
 <h2>Folders to have a look at</h2>
